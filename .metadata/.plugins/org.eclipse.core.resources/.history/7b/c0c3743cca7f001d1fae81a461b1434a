@@ -1,0 +1,43 @@
+package com.employeeapi.testCases;
+
+import org.json.simple.JSONObject;
+import org.testng.annotations.BeforeClass;
+
+import com.employeeapi.base.TestBase;
+import com.employeeapi.utility.RestUtils;
+
+import io.restassured.RestAssured;
+import io.restassured.http.Method;
+
+public class TC003_POST_Create_Employee extends TestBase{
+	
+	String empName = RestUtils.empName();
+	String empSal = RestUtils.empSal();
+	String empAge = RestUtils.empAge();
+	
+	@BeforeClass
+	
+	public void getAllemployees() throws InterruptedException   {
+		logger.info("Starting TC003_POST_Create_Emp_Test");
+		RestAssured.baseURI= baseURI;
+		
+		httpRequests = RestAssured.given();
+		
+		JSONObject  requestParams = new JSONObject ();
+		requestParams.put("name", empName);
+		requestParams.put("salary", empSal);
+		requestParams.put("age", empAge);
+		
+		
+		httpRequests.header("Content-Type", "application/json");
+		
+		httpRequests.body(requestParams.toJSONString());
+		
+		httpRequests.request(Method.POST,"/create");
+		Thread.sleep(10000);
+	
+	
+	}
+	
+
+}

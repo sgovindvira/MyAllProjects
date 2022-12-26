@@ -1,0 +1,90 @@
+package com.employeeapi.testCases;
+
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.employeeapi.base.TestBase;
+
+import io.restassured.RestAssured;
+import io.restassured.http.Method;
+
+public class TC001_GET_AllEmployees extends TestBase {
+	
+	@BeforeClass
+	
+	public void getAllemployees() throws InterruptedException {
+		logger.info("Starting TC001_GET_AllEmployee");
+		RestAssured.baseURI= baseURI;
+		
+		httpRequests = RestAssured.given();
+		
+		response = httpRequests.request(Method.GET,"/employees");
+		Thread.sleep(3000);
+		}
+	
+	@Test
+	public void checkResponseBody() {
+		logger.info("Checking Response Body");
+	String responseBody =	response.getBody().asPrettyString();
+		logger.info("Response Body is " + responseBody);
+		Assert.assertTrue(responseBody != null);
+	}
+	
+	@Test
+	public void checkStatusCode() {
+		logger.info("Checking Status code");
+		int statusCode = response.getStatusCode();
+		logger.info("Status code is " + statusCode );
+		Assert.assertEquals(statusCode, 200);
+		
+		
+	}
+	
+	@Test
+	public void checkResponseTime() {
+		logger.info("Checking Response Time");
+		long respondTime = response.getTime();
+		logger.info("Response Time is " + respondTime);
+		
+		
+		if(respondTime> 2000) 
+			logger.warn("Respond time is greater han 2000");
+		Assert.assertTrue(respondTime<2000);
+		
+	}
+	
+	@Test
+	public void checkStatusLine() {
+		logger.info("Checking Status line");
+		String statusLine = response.statusLine();
+		logger.info("Status line is " + statusLine);
+		Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
+		
+	}
+	
+	@Test
+	public void checkContentType() {
+		logger.info("Checking  content type");
+		String cotentType = response.contentType();
+		logger.info("Content type is " +cotentType );
+		Assert.assertEquals(cotentType, "application/json");
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

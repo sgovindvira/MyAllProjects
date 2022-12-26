@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="0">
+    <testcase classname="SauceDemo Login Features" name="Login Test Scenario" time="0">
+        <system-out><![CDATA[Given User is already on login page.........................................skipped
+When Title of login page is Swag Labs.......................................skipped
+Then User enters "standard_user" and "secret_sauce".........................skipped
+Then User clicks on Login button............................................skipped
+Then user can see cart icon.................................................skipped
+Then click on add to cart on Sauce Lab Backpack.............................skipped
+Then click on Cart icon.....................................................skipped
+Then click on Checkout......................................................skipped
+Then Enter  shipping details................................................skipped
+Then click on continue......................................................skipped
+Then click on Finnish.......................................................skipped
+Then Verify Thank you for purchase message..................................skipped
+Then close the browser......................................................skipped
+]]></system-out>
+    </testcase>
+    <testcase classname="SauceDemo Login Features" name="Login Test Scenario 2" time="0">
+        <system-out><![CDATA[Given User is already on login page.........................................skipped
+When Title of login page is Swag Labs.......................................skipped
+Then User enters "problem_user" and "secret_sauce"..........................skipped
+Then User clicks on Login button............................................skipped
+Then user can see cart icon.................................................skipped
+Then click on add to cart on Sauce Lab Backpack.............................skipped
+Then click on Cart icon.....................................................skipped
+Then click on Checkout......................................................skipped
+Then Enter  shipping details................................................skipped
+Then click on continue......................................................skipped
+Then click on Finnish.......................................................skipped
+Then Verify Thank you for purchase message..................................skipped
+Then close the browser......................................................skipped
+]]></system-out>
+    </testcase>
+    <testcase classname="SauceDemo Login Features" name="Login Test Scenario 3" time="0">
+        <system-out><![CDATA[Given User is already on login page.........................................skipped
+When Title of login page is Swag Labs.......................................skipped
+Then User enters "performance_glitch_user" and "secret_sauce"...............skipped
+Then User clicks on Login button............................................skipped
+Then user can see cart icon.................................................skipped
+Then click on add to cart on Sauce Lab Backpack.............................skipped
+Then click on Cart icon.....................................................skipped
+Then click on Checkout......................................................skipped
+Then Enter  shipping details................................................skipped
+Then click on continue......................................................skipped
+Then click on Finnish.......................................................skipped
+Then Verify Thank you for purchase message..................................skipped
+Then close the browser......................................................skipped
+]]></system-out>
+    </testcase>
+    <testcase classname="SauceDemo Login Features" name="Login Test Scenario 4" time="0">
+        <system-out><![CDATA[Given User is already on login page.........................................skipped
+When Title of login page is Swag Labs.......................................skipped
+Then User enters "locked_out_user" and "secret_sauce".......................skipped
+Then User clicks on Login button............................................skipped
+Then user can see cart icon.................................................skipped
+Then click on add to cart on Sauce Lab Backpack.............................skipped
+Then click on Cart icon.....................................................skipped
+Then click on Checkout......................................................skipped
+Then Enter  shipping details................................................skipped
+Then click on continue......................................................skipped
+Then click on Finnish.......................................................skipped
+Then Verify Thank you for purchase message..................................skipped
+Then close the browser......................................................skipped
+]]></system-out>
+    </testcase>
+</testsuite>

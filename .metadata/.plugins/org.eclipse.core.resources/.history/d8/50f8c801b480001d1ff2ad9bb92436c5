@@ -1,0 +1,10 @@
+package Java_Interview_Qustions_Naveen;
+
+public class Print_Integer {
+	public static void main(String[] args) {
+		int i  =1;
+		System.out.println(i);
+				
+	}
+
+}

@@ -1,0 +1,1394 @@
+<html xmlns:math="http://exslt.org/math" xmlns:testng="http://testng.org">
+   <head>
+      <title>TestNG Results</title>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <meta http-equiv="pragma" content="no-cache"></meta>
+      <meta http-equiv="cache-control" content="max-age=0"></meta>
+      <meta http-equiv="cache-control" content="no-cache"></meta>
+      <meta http-equiv="cache-control" content="no-store"></meta>
+      <LINK rel="stylesheet" href="style.css"></LINK>
+      <script type="text/javascript" src="main.js"></script>
+   </head>
+   <body>
+      <table width="100%" style="font-size: 16px; margin-bottom: 10px;" cellspacing="1">
+         <tr>
+            <td width="100%">
+               Test case
+               
+               <b>Default test</b>
+            </td>
+            <td style="background-color: #FFBBBB; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">3</div>
+            </td>
+            <td style="background-color: lightgreen; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">1</div>
+            </td>
+            <td style="background-color: #FFFFBB; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">0</div>
+            </td>
+            <td align="center" style="background-color: #eaf0f7; padding: 3px 3px 3px 0;">
+               <div style="width: 50px;">4</div>
+            </td>
+            <td align="center"
+                style="font-weight: bold; background-color: #eaf0f7; padding: 3px 3px 3px 0;">
+               <div style="width: 50px;">25%</div>
+            </td>
+            <td style="background-color: #eaf0f7; padding: 3px 3px 3px 0;" align="center"
+                nowrap="true">40s
+               
+            </td>
+         </tr>
+      </table>
+      <div style="width: 200px;">
+         <label for="groupMethodsCheckBox" style="font-weight: bold; margin: 0;">
+            <input id="groupMethodsCheckBox" type="checkbox" onclick="switchTestMethodsView(this)"></input>
+            Group by class
+            
+         </label>
+         <br></br>
+         <label for="methodsFilter_ALL" style="font-weight: bold; margin: 0;">
+            <input id="methodsFilter_ALL" type="checkbox"
+                   onclick="testMethodsFilterChanged(this, 'ALL')"></input>
+            All
+            
+         </label>
+      </div>
+      <label for="methodsFilter_FAIL" style="margin-left: 20px;">
+         <input id="methodsFilter_FAIL" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'FAIL')"
+                checked=""></input>
+         Failed
+         
+      </label>
+      <label for="methodsFilter_PASS">
+         <input id="methodsFilter_PASS" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'PASS')"
+                checked=""></input>
+         Passed
+         
+      </label>
+      <label for="methodsFilter_SKIP">
+         <input id="methodsFilter_SKIP" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'SKIP')"
+                checked=""></input>
+         Skipped
+         
+      </label>
+      <label for="methodsFilter_CONF">
+         <input id="methodsFilter_CONF" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'CONF')"></input>
+         Config
+         
+      </label>
+      <br></br>
+      <div id="testMethodsByStatus">
+         <table class="testMethodsTable" cellpadding="0" cellspacing="0">
+            <tr class="methodsTableHeader">
+               <td width="100%">Name</td>
+               <td nowrap="true">Started</td>
+               <td nowrap="true">Duration</td>
+               <td>Exception</td>
+            </tr>
+            <tr id="tests.LoginTest_loginwithspecialCharecter_byStatus_failed_FAIL1_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_loginwithspecialCharecter_byStatus_failed_FAIL1_details')">loginwithspecialCharecter()</a>
+               </td>
+               <td nowrap="true">12:09:12</td>
+               <td nowrap="true" align="right">4s
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_loginwithspecialCharecter_byStatus_failed_FAIL1_exception')">java.lang.AssertionError: 
+                     expected [jhfrkjn$$$%%&amp;&amp;] but found []
+                     
+                  </a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_loginwithspecialCharecter_byStatus_failed_FAIL1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>loginwithspecialCharecter
+                     </div>
+                     <div>
+                        <b>Signature: </b>loginwithspecialCharecter()[pri:1, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:12
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:17
+                     </div>
+                     <div>
+                        <b>Duration: </b>4s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_loginwithspecialCharecter_byStatus_failed_FAIL1_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">java.lang.AssertionError: expected [jhfrkjn$$$%%&amp;&amp;] but found []
+                        at org.testng.Assert.fail(Assert.java:99)
+                        at org.testng.Assert.failNotEquals(Assert.java:1037)
+                        at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+                        at org.testng.Assert.assertEquals(Assert.java:122)
+                        at org.testng.Assert.assertEquals(Assert.java:629)
+                        at org.testng.Assert.assertEquals(Assert.java:639)
+                        at tests.LoginTest.loginwithspecialCharecter(LoginTest.java:48)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+                        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                        at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+                        at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+                        at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+                        at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+                        at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+                        at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+                        at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+                        at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+                        at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+                        at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+                        at org.testng.TestRunner.privateRun(TestRunner.java:794)
+                        at org.testng.TestRunner.run(TestRunner.java:596)
+                        at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+                        at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+                        at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+                        at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+                        at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+                        at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+                        at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+                        at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+                        at org.testng.TestNG.runSuites(TestNG.java:1063)
+                        at org.testng.TestNG.run(TestNG.java:1031)
+                        at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+                        at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+                        at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+            <tr id="tests.LoginTest_loginwithEmpty_byStatus_failed_FAIL2_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_loginwithEmpty_byStatus_failed_FAIL2_details')">loginwithEmpty()</a>
+               </td>
+               <td nowrap="true">12:09:21</td>
+               <td nowrap="true" align="right">4s
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_loginwithEmpty_byStatus_failed_FAIL2_exception')">java.lang.AssertionError: 
+                     expected [Please enter your username or card number.] but found []
+                     
+                  </a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_loginwithEmpty_byStatus_failed_FAIL2_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>loginwithEmpty
+                     </div>
+                     <div>
+                        <b>Signature: </b>loginwithEmpty()[pri:2, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:21
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:26
+                     </div>
+                     <div>
+                        <b>Duration: </b>4s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_loginwithEmpty_byStatus_failed_FAIL2_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">java.lang.AssertionError: expected [Please enter your username or card number.] but found []
+                        at org.testng.Assert.fail(Assert.java:99)
+                        at org.testng.Assert.failNotEquals(Assert.java:1037)
+                        at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+                        at org.testng.Assert.assertEquals(Assert.java:122)
+                        at org.testng.Assert.assertEquals(Assert.java:629)
+                        at org.testng.Assert.assertEquals(Assert.java:639)
+                        at tests.LoginTest.loginwithEmpty(LoginTest.java:60)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+                        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                        at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+                        at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+                        at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+                        at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+                        at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+                        at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+                        at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+                        at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+                        at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+                        at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+                        at org.testng.TestRunner.privateRun(TestRunner.java:794)
+                        at org.testng.TestRunner.run(TestRunner.java:596)
+                        at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+                        at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+                        at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+                        at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+                        at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+                        at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+                        at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+                        at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+                        at org.testng.TestNG.runSuites(TestNG.java:1063)
+                        at org.testng.TestNG.run(TestNG.java:1031)
+                        at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+                        at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+                        at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+            <tr id="tests.LoginTest_loginwithwrongandpassword_byStatus_failed_FAIL3_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_loginwithwrongandpassword_byStatus_failed_FAIL3_details')">loginwithwrongandpassword()</a>
+               </td>
+               <td nowrap="true">12:09:41</td>
+               <td nowrap="true" align="right">4s
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_loginwithwrongandpassword_byStatus_failed_FAIL3_exception')">org.openqa.selenium.NoSuchElementException: 
+                     no such element: Unable to locate element: {"method":"css selector","selector":"#globalError"}
+                     (Session info: chrome=107.0.5304.107)
+                     For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+                     Build info: version: '4.5.0', revision: 'fe167b119a'
+                     System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+                     Driver info: org.openqa.selenium.chrome.ChromeDriver
+                     Command: [b0657b774b78660b8065da764205f93f, findElement {using=id, value=globalError}]
+                     Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion:
+                     106.0.5249.61 (511755355844..., userDataDir: C:\Users\Jay\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:58189},
+                     networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58189/devtoo...,
+                     se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000,
+                     script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob:
+                     true, webauthn:virtualAuthenticators: true}
+                     Session ID: b0657b774b78660b8065da764205f93f
+                     
+                  </a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_loginwithwrongandpassword_byStatus_failed_FAIL3_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>loginwithwrongandpassword
+                     </div>
+                     <div>
+                        <b>Signature: </b>loginwithwrongandpassword()[pri:4, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:41
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:46
+                     </div>
+                     <div>
+                        <b>Duration: </b>4s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_loginwithwrongandpassword_byStatus_failed_FAIL3_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#globalError"}
+                        (Session info: chrome=107.0.5304.107)
+                        For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+                        Build info: version: '4.5.0', revision: 'fe167b119a'
+                        System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+                        Driver info: org.openqa.selenium.chrome.ChromeDriver
+                        Command: [b0657b774b78660b8065da764205f93f, findElement {using=id, value=globalError}]
+                        Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion:
+                        106.0.5249.61 (511755355844..., userDataDir: C:\Users\Jay\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:58189},
+                        networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58189/devtoo...,
+                        se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000,
+                        script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob:
+                        true, webauthn:virtualAuthenticators: true}
+                        Session ID: b0657b774b78660b8065da764205f93f
+                        at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+                        at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+                        at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+                        at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+                        at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+                        at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+                        at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+                        at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+                        at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+                        at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+                        at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+                        at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+                        at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+                        at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+                        at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+                        at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+                        at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+                        at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+                        at com.sun.proxy.$Proxy16.getText(Unknown Source)
+                        at pages.LoginPage.globalError(LoginPage.java:125)
+                        at tests.LoginTest.loginwithwrongandpassword(LoginTest.java:83)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+                        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                        at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+                        at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+                        at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+                        at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+                        at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+                        at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+                        at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+                        at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+                        at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+                        at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+                        at org.testng.TestRunner.privateRun(TestRunner.java:794)
+                        at org.testng.TestRunner.run(TestRunner.java:596)
+                        at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+                        at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+                        at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+                        at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+                        at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+                        at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+                        at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+                        at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+                        at org.testng.TestNG.runSuites(TestNG.java:1063)
+                        at org.testng.TestNG.run(TestNG.java:1031)
+                        at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+                        at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+                        at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+            <tr id="tests.LoginTest_beforeMethod_byStatus_passed_PASS1_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_beforeMethod_byStatus_passed_PASS1_details')">beforeMethod()</a>
+               </td>
+               <td nowrap="true">12:09:07</td>
+               <td nowrap="true" align="right">4s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_beforeMethod_byStatus_passed_PASS1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>beforeMethod
+                     </div>
+                     <div>
+                        <b>Signature: </b>beforeMethod()[pri:0, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:07
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:12
+                     </div>
+                     <div>
+                        <b>Duration: </b>4s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="tests.LoginTest_afterMethod_byStatus_passed_PASS2_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_afterMethod_byStatus_passed_PASS2_details')">afterMethod()</a>
+               </td>
+               <td nowrap="true">12:09:17</td>
+               <td nowrap="true" align="right">853 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_afterMethod_byStatus_passed_PASS2_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>afterMethod
+                     </div>
+                     <div>
+                        <b>Signature: </b>afterMethod()[pri:0, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:17
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:17
+                     </div>
+                     <div>
+                        <b>Duration: </b>853 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="tests.LoginTest_beforeMethod_byStatus_passed_PASS3_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_beforeMethod_byStatus_passed_PASS3_details')">beforeMethod()</a>
+               </td>
+               <td nowrap="true">12:09:17</td>
+               <td nowrap="true" align="right">3s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_beforeMethod_byStatus_passed_PASS3_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>beforeMethod
+                     </div>
+                     <div>
+                        <b>Signature: </b>beforeMethod()[pri:0, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:17
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:21
+                     </div>
+                     <div>
+                        <b>Duration: </b>3s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="tests.LoginTest_afterMethod_byStatus_passed_PASS4_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_afterMethod_byStatus_passed_PASS4_details')">afterMethod()</a>
+               </td>
+               <td nowrap="true">12:09:26</td>
+               <td nowrap="true" align="right">813 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_afterMethod_byStatus_passed_PASS4_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>afterMethod
+                     </div>
+                     <div>
+                        <b>Signature: </b>afterMethod()[pri:0, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:26
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:27
+                     </div>
+                     <div>
+                        <b>Duration: </b>813 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="tests.LoginTest_beforeMethod_byStatus_passed_PASS5_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_beforeMethod_byStatus_passed_PASS5_details')">beforeMethod()</a>
+               </td>
+               <td nowrap="true">12:09:27</td>
+               <td nowrap="true" align="right">4s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_beforeMethod_byStatus_passed_PASS5_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>beforeMethod
+                     </div>
+                     <div>
+                        <b>Signature: </b>beforeMethod()[pri:0, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:27
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:31
+                     </div>
+                     <div>
+                        <b>Duration: </b>4s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="tests.LoginTest_loginwithEmptypassword_byStatus_passed_PASS6_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_loginwithEmptypassword_byStatus_passed_PASS6_details')">loginwithEmptypassword()</a>
+               </td>
+               <td nowrap="true">12:09:31</td>
+               <td nowrap="true" align="right">4s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_loginwithEmptypassword_byStatus_passed_PASS6_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>loginwithEmptypassword
+                     </div>
+                     <div>
+                        <b>Signature: </b>loginwithEmptypassword()[pri:3, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:31
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:36
+                     </div>
+                     <div>
+                        <b>Duration: </b>4s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="tests.LoginTest_afterMethod_byStatus_passed_PASS7_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_afterMethod_byStatus_passed_PASS7_details')">afterMethod()</a>
+               </td>
+               <td nowrap="true">12:09:36</td>
+               <td nowrap="true" align="right">826 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_afterMethod_byStatus_passed_PASS7_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>afterMethod
+                     </div>
+                     <div>
+                        <b>Signature: </b>afterMethod()[pri:0, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:36
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:37
+                     </div>
+                     <div>
+                        <b>Duration: </b>826 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="tests.LoginTest_beforeMethod_byStatus_passed_PASS8_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_beforeMethod_byStatus_passed_PASS8_details')">beforeMethod()</a>
+               </td>
+               <td nowrap="true">12:09:37</td>
+               <td nowrap="true" align="right">4s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_beforeMethod_byStatus_passed_PASS8_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>beforeMethod
+                     </div>
+                     <div>
+                        <b>Signature: </b>beforeMethod()[pri:0, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:37
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:41
+                     </div>
+                     <div>
+                        <b>Duration: </b>4s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="tests.LoginTest_afterMethod_byStatus_passed_PASS9_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_afterMethod_byStatus_passed_PASS9_details')">afterMethod()</a>
+               </td>
+               <td nowrap="true">12:09:46</td>
+               <td nowrap="true" align="right">901 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_afterMethod_byStatus_passed_PASS9_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>afterMethod
+                     </div>
+                     <div>
+                        <b>Signature: </b>afterMethod()[pri:0, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:46
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:47
+                     </div>
+                     <div>
+                        <b>Duration: </b>901 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+         </table>
+      </div>
+      <div id="testMethodsByClass" style="display: none;">
+         <table class="testMethodsTable" cellpadding="0" cellspacing="0">
+            <tr>
+               <td colspan="4">
+                  <h3 style="display: inline;">tests.LoginTest</h3>
+               </td>
+            </tr>
+            <tr class="methodsTableHeader">
+               <td width="100%">Name</td>
+               <td nowrap="true">Started</td>
+               <td nowrap="true">Duration</td>
+               <td>Exception</td>
+            </tr>
+            <tr id="tests.LoginTest_beforeMethod_byClass_PASS1_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_beforeMethod_byClass_PASS1_details')">beforeMethod()</a>
+               </td>
+               <td nowrap="true">12:09:07</td>
+               <td nowrap="true" align="right">4s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_beforeMethod_byClass_PASS1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>beforeMethod
+                     </div>
+                     <div>
+                        <b>Signature: </b>beforeMethod()[pri:0, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:07
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:12
+                     </div>
+                     <div>
+                        <b>Duration: </b>4s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="tests.LoginTest_loginwithspecialCharecter_byClass_FAIL2_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_loginwithspecialCharecter_byClass_FAIL2_details')">loginwithspecialCharecter()</a>
+               </td>
+               <td nowrap="true">12:09:12</td>
+               <td nowrap="true" align="right">4s
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_loginwithspecialCharecter_byClass_FAIL2_exception')">java.lang.AssertionError: 
+                     expected [jhfrkjn$$$%%&amp;&amp;] but found []
+                     
+                  </a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_loginwithspecialCharecter_byClass_FAIL2_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>loginwithspecialCharecter
+                     </div>
+                     <div>
+                        <b>Signature: </b>loginwithspecialCharecter()[pri:1, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:12
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:17
+                     </div>
+                     <div>
+                        <b>Duration: </b>4s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_loginwithspecialCharecter_byClass_FAIL2_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">java.lang.AssertionError: expected [jhfrkjn$$$%%&amp;&amp;] but found []
+                        at org.testng.Assert.fail(Assert.java:99)
+                        at org.testng.Assert.failNotEquals(Assert.java:1037)
+                        at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+                        at org.testng.Assert.assertEquals(Assert.java:122)
+                        at org.testng.Assert.assertEquals(Assert.java:629)
+                        at org.testng.Assert.assertEquals(Assert.java:639)
+                        at tests.LoginTest.loginwithspecialCharecter(LoginTest.java:48)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+                        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                        at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+                        at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+                        at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+                        at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+                        at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+                        at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+                        at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+                        at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+                        at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+                        at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+                        at org.testng.TestRunner.privateRun(TestRunner.java:794)
+                        at org.testng.TestRunner.run(TestRunner.java:596)
+                        at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+                        at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+                        at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+                        at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+                        at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+                        at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+                        at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+                        at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+                        at org.testng.TestNG.runSuites(TestNG.java:1063)
+                        at org.testng.TestNG.run(TestNG.java:1031)
+                        at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+                        at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+                        at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+            <tr id="tests.LoginTest_afterMethod_byClass_PASS3_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_afterMethod_byClass_PASS3_details')">afterMethod()</a>
+               </td>
+               <td nowrap="true">12:09:17</td>
+               <td nowrap="true" align="right">853 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_afterMethod_byClass_PASS3_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>afterMethod
+                     </div>
+                     <div>
+                        <b>Signature: </b>afterMethod()[pri:0, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:17
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:17
+                     </div>
+                     <div>
+                        <b>Duration: </b>853 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="tests.LoginTest_beforeMethod_byClass_PASS4_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_beforeMethod_byClass_PASS4_details')">beforeMethod()</a>
+               </td>
+               <td nowrap="true">12:09:17</td>
+               <td nowrap="true" align="right">3s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_beforeMethod_byClass_PASS4_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>beforeMethod
+                     </div>
+                     <div>
+                        <b>Signature: </b>beforeMethod()[pri:0, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:17
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:21
+                     </div>
+                     <div>
+                        <b>Duration: </b>3s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="tests.LoginTest_loginwithEmpty_byClass_FAIL5_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_loginwithEmpty_byClass_FAIL5_details')">loginwithEmpty()</a>
+               </td>
+               <td nowrap="true">12:09:21</td>
+               <td nowrap="true" align="right">4s
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_loginwithEmpty_byClass_FAIL5_exception')">java.lang.AssertionError: 
+                     expected [Please enter your username or card number.] but found []
+                     
+                  </a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_loginwithEmpty_byClass_FAIL5_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>loginwithEmpty
+                     </div>
+                     <div>
+                        <b>Signature: </b>loginwithEmpty()[pri:2, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:21
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:26
+                     </div>
+                     <div>
+                        <b>Duration: </b>4s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_loginwithEmpty_byClass_FAIL5_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">java.lang.AssertionError: expected [Please enter your username or card number.] but found []
+                        at org.testng.Assert.fail(Assert.java:99)
+                        at org.testng.Assert.failNotEquals(Assert.java:1037)
+                        at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+                        at org.testng.Assert.assertEquals(Assert.java:122)
+                        at org.testng.Assert.assertEquals(Assert.java:629)
+                        at org.testng.Assert.assertEquals(Assert.java:639)
+                        at tests.LoginTest.loginwithEmpty(LoginTest.java:60)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+                        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                        at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+                        at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+                        at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+                        at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+                        at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+                        at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+                        at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+                        at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+                        at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+                        at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+                        at org.testng.TestRunner.privateRun(TestRunner.java:794)
+                        at org.testng.TestRunner.run(TestRunner.java:596)
+                        at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+                        at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+                        at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+                        at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+                        at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+                        at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+                        at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+                        at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+                        at org.testng.TestNG.runSuites(TestNG.java:1063)
+                        at org.testng.TestNG.run(TestNG.java:1031)
+                        at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+                        at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+                        at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+            <tr id="tests.LoginTest_afterMethod_byClass_PASS6_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_afterMethod_byClass_PASS6_details')">afterMethod()</a>
+               </td>
+               <td nowrap="true">12:09:26</td>
+               <td nowrap="true" align="right">813 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_afterMethod_byClass_PASS6_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>afterMethod
+                     </div>
+                     <div>
+                        <b>Signature: </b>afterMethod()[pri:0, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:26
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:27
+                     </div>
+                     <div>
+                        <b>Duration: </b>813 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="tests.LoginTest_beforeMethod_byClass_PASS7_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_beforeMethod_byClass_PASS7_details')">beforeMethod()</a>
+               </td>
+               <td nowrap="true">12:09:27</td>
+               <td nowrap="true" align="right">4s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_beforeMethod_byClass_PASS7_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>beforeMethod
+                     </div>
+                     <div>
+                        <b>Signature: </b>beforeMethod()[pri:0, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:27
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:31
+                     </div>
+                     <div>
+                        <b>Duration: </b>4s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="tests.LoginTest_loginwithEmptypassword_byClass_PASS8_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_loginwithEmptypassword_byClass_PASS8_details')">loginwithEmptypassword()</a>
+               </td>
+               <td nowrap="true">12:09:31</td>
+               <td nowrap="true" align="right">4s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_loginwithEmptypassword_byClass_PASS8_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>loginwithEmptypassword
+                     </div>
+                     <div>
+                        <b>Signature: </b>loginwithEmptypassword()[pri:3, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:31
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:36
+                     </div>
+                     <div>
+                        <b>Duration: </b>4s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="tests.LoginTest_afterMethod_byClass_PASS9_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_afterMethod_byClass_PASS9_details')">afterMethod()</a>
+               </td>
+               <td nowrap="true">12:09:36</td>
+               <td nowrap="true" align="right">826 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_afterMethod_byClass_PASS9_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>afterMethod
+                     </div>
+                     <div>
+                        <b>Signature: </b>afterMethod()[pri:0, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:36
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:37
+                     </div>
+                     <div>
+                        <b>Duration: </b>826 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="tests.LoginTest_beforeMethod_byClass_PASS10_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_beforeMethod_byClass_PASS10_details')">beforeMethod()</a>
+               </td>
+               <td nowrap="true">12:09:37</td>
+               <td nowrap="true" align="right">4s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_beforeMethod_byClass_PASS10_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>beforeMethod
+                     </div>
+                     <div>
+                        <b>Signature: </b>beforeMethod()[pri:0, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:37
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:41
+                     </div>
+                     <div>
+                        <b>Duration: </b>4s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="tests.LoginTest_loginwithwrongandpassword_byClass_FAIL11_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_loginwithwrongandpassword_byClass_FAIL11_details')">loginwithwrongandpassword()</a>
+               </td>
+               <td nowrap="true">12:09:41</td>
+               <td nowrap="true" align="right">4s
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_loginwithwrongandpassword_byClass_FAIL11_exception')">org.openqa.selenium.NoSuchElementException: 
+                     no such element: Unable to locate element: {"method":"css selector","selector":"#globalError"}
+                     (Session info: chrome=107.0.5304.107)
+                     For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+                     Build info: version: '4.5.0', revision: 'fe167b119a'
+                     System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+                     Driver info: org.openqa.selenium.chrome.ChromeDriver
+                     Command: [b0657b774b78660b8065da764205f93f, findElement {using=id, value=globalError}]
+                     Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion:
+                     106.0.5249.61 (511755355844..., userDataDir: C:\Users\Jay\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:58189},
+                     networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58189/devtoo...,
+                     se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000,
+                     script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob:
+                     true, webauthn:virtualAuthenticators: true}
+                     Session ID: b0657b774b78660b8065da764205f93f
+                     
+                  </a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_loginwithwrongandpassword_byClass_FAIL11_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>loginwithwrongandpassword
+                     </div>
+                     <div>
+                        <b>Signature: </b>loginwithwrongandpassword()[pri:4, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:41
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:46
+                     </div>
+                     <div>
+                        <b>Duration: </b>4s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_loginwithwrongandpassword_byClass_FAIL11_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#globalError"}
+                        (Session info: chrome=107.0.5304.107)
+                        For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+                        Build info: version: '4.5.0', revision: 'fe167b119a'
+                        System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+                        Driver info: org.openqa.selenium.chrome.ChromeDriver
+                        Command: [b0657b774b78660b8065da764205f93f, findElement {using=id, value=globalError}]
+                        Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion:
+                        106.0.5249.61 (511755355844..., userDataDir: C:\Users\Jay\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:58189},
+                        networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58189/devtoo...,
+                        se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000,
+                        script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob:
+                        true, webauthn:virtualAuthenticators: true}
+                        Session ID: b0657b774b78660b8065da764205f93f
+                        at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+                        at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+                        at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+                        at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+                        at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+                        at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+                        at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+                        at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+                        at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+                        at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+                        at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+                        at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+                        at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+                        at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+                        at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+                        at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+                        at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+                        at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+                        at com.sun.proxy.$Proxy16.getText(Unknown Source)
+                        at pages.LoginPage.globalError(LoginPage.java:125)
+                        at tests.LoginTest.loginwithwrongandpassword(LoginTest.java:83)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+                        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                        at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+                        at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+                        at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+                        at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+                        at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+                        at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+                        at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+                        at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+                        at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+                        at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+                        at org.testng.TestRunner.privateRun(TestRunner.java:794)
+                        at org.testng.TestRunner.run(TestRunner.java:596)
+                        at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+                        at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+                        at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+                        at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+                        at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+                        at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+                        at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+                        at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+                        at org.testng.TestNG.runSuites(TestNG.java:1063)
+                        at org.testng.TestNG.run(TestNG.java:1031)
+                        at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+                        at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+                        at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+            <tr id="tests.LoginTest_afterMethod_byClass_PASS12_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('tests.LoginTest_afterMethod_byClass_PASS12_details')">afterMethod()</a>
+               </td>
+               <td nowrap="true">12:09:46</td>
+               <td nowrap="true" align="right">901 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="tests.LoginTest_afterMethod_byClass_PASS12_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>afterMethod
+                     </div>
+                     <div>
+                        <b>Signature: </b>afterMethod()[pri:0, instance:tests.LoginTest@5143c662]
+                     </div>
+                     <div>
+                        <b>Start time: </b>12:09:46
+                     </div>
+                     <div>
+                        <b>End time: </b>12:09:47
+                     </div>
+                     <div>
+                        <b>Duration: </b>901 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+         </table>
+         <br></br>
+      </div>
+      <div style="margin-top: 15px; color: gray; text-align: center; font-size: 9px;">
+         Generated with
+         
+         <a href="http://code.google.com/p/testng-xslt/" style="color: #8888aa;"
+            target="_blank">
+            TestNG XSLT
+            
+         </a>
+      </div>
+   </body>
+</html>

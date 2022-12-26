@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="EGit.KnownHosts">
+		<item value="git.eclipse.org"/>
+		<item value="github.com"/>
+		<item value="bitbucket.org"/>
+	</list>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/sgovindvira/Rest_API_Framework.git"/>
+	</list>
+	<list key="CommitDialog.authorValues">
+		<item value="Your Name &lt;you@example.com&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="Your Name &lt;you@example.com&gt;"/>
+	</list>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="sortItemState" value="false"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="C:\QA2022\Rest_API_Framework\.git">
+			<item value="false"/>
+			<item value="Sanjay&lt;samgovval@gmail.com&gt;"/>
+			<item value="Rest API"/>
+			<item value="Sanjay&lt;samgovval@gmail.com&gt;"/>
+			<item value="cba3d6ffd0436e022b952524c3f86d61fae7a694"/>
+			<item value="0"/>
+			<item value="false"/>
+		</list>
+	</section>
+</section>

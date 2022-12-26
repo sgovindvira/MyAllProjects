@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;selenium.AllTests&apos; to &apos;JunitSuiteRunnerTest&apos;&#x0D;&#x0A;- Original project: &apos;JunitProjectNikulPatel&apos;&#x0D;&#x0A;- Original element: &apos;selenium.AllTests&apos;&#x0D;&#x0A;- Renamed element: &apos;selenium.JunitSuiteRunnerTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;AllTests&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;selenium{AllTests.java[AllTests" matchStrategy="1" name="JunitSuiteRunnerTest" qualified="false" references="true" similarDeclarations="false" stamp="1667666483586" textual="false" version="1.0"/>
+</session>

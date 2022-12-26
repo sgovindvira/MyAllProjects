@@ -1,0 +1,18 @@
+package Day3SDETQA;
+
+public class VowerAndConso {
+
+	public static void main(String[] args) {
+	
+		String sanjay = "Sanajy";
+		
+		if(sanjay.contains("a")) {
+			System.out.println("It contains Vowel");
+		}else {System.out.println("NNNNNNNNNNNNNNNNNNN");
+		
+		
+
+	}
+
+}
+}

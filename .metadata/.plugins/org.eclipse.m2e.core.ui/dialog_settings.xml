@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\QA2022\Selenium_Workspace\Rest_Assured_API_Automation_Framework_SDET"/>
+			<item value="C:\QA2022\Selenium_Workspace\SeleniumPractice\src\CoreJavaPractie\MethodOverLoading.java"/>
+			<item value="C:\QA2022\Selenium_Workspace\BasicFramework"/>
+			<item value="C:\QA2022\Selenium_Workspace\CucumberProject"/>
+			<item value="C:\QA2022\Practice\src"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="API_REST_ASSURED_FRAMEWORK.API_REST_ASSURED_FRAMEWORK"/>
+			<item value="Rest_Assured_API_Automation_Framework_SDET"/>
+			<item value="Rest_Assured_Automation_Framework_SDET.Rest_Assured_Automation_Framework_SDET"/>
+			<item value="RestAssuredProjectSDET.RestAssuredProjectSDET"/>
+			<item value="JAVAOOP.JAVAOOP"/>
+			<item value="CucumberPOMProject.test"/>
+		</list>
+		<list key="groupId">
+			<item value="API_REST_ASSURED_FRAMEWORK"/>
+			<item value="Rest_Assured_API_Automation_Framework_SDET"/>
+			<item value="Rest_Assured_Automation_Framework_SDET"/>
+			<item value="RestAssuredProjectSDET"/>
+			<item value="JAVAOOP"/>
+			<item value="CucumberPOMProject"/>
+		</list>
+		<list key="artifactId">
+			<item value="API_REST_ASSURED_FRAMEWORK"/>
+			<item value="Rest_Assured_API_Automation_Framework_SDET"/>
+			<item value="Rest_Assured_Automation_Framework_SDET"/>
+			<item value="RestAssuredProjectSDET"/>
+			<item value="JAVAOOP"/>
+			<item value="test"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\QA2022\Selenium_Workspace\MyMavenProject"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenCheckoutLocationPage">
+		<list key="scmUrl">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

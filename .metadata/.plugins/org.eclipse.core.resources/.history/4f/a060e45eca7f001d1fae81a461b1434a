@@ -1,0 +1,93 @@
+package com.employeeapi.testCases;
+
+import org.json.simple.JSONObject;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.employeeapi.base.TestBase;
+import com.employeeapi.utility.RestUtils;
+
+import io.restassured.RestAssured;
+import io.restassured.http.Method;
+
+public class TC003_POST_Create_Employee extends TestBase{
+
+	String empName = RestUtils.empName();
+	String empSal = RestUtils.empSal();
+	String empAge = RestUtils.empAge();
+
+	@BeforeClass
+
+	public void getAllemployees() throws InterruptedException   {
+		logger.info("Starting TC003_POST_Create_Emp_Test");
+		RestAssured.baseURI= baseURI;
+
+		httpRequests = RestAssured.given();
+
+		JSONObject  requestParams = new JSONObject ();
+		requestParams.put("name", empName);
+		requestParams.put("salary", empSal);
+		requestParams.put("age", empAge);
+
+
+		httpRequests.header("Content-Type", "application/json");
+
+		httpRequests.body(requestParams.toJSONString());
+
+		httpRequests.request(Method.POST,"/create");
+		Thread.sleep(10000);
+		
+		}
+	
+	
+	@Test
+	public void checkingBody() {
+		String responseBody = response.body().asPrettyString();
+		logger.info("This is responseBody " + responseBody );
+		Assert.assertTrue(responseBody.contains(empName));
+		Assert.assertTrue(responseBody.contains(empSal));
+		Assert.assertTrue(responseBody.contains(empAge));
+		
+	}
+	
+	@Test
+	public void checkStatusCode() {
+		logger.info("Checking Status code");
+		int statusCode = response.getStatusCode();
+		logger.info("Status code is " + statusCode );
+		Assert.assertEquals(statusCode, 200);
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+

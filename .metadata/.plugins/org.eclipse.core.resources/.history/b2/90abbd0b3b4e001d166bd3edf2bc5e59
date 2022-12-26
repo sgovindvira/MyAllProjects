@@ -1,0 +1,21 @@
+package PracticeTestNGYoutube;
+
+import org.junit.Test;
+
+
+
+public class searchBuyPhone {
+	
+	@Test
+	public void search() {
+		
+	System.out.println("SeachingPhone");}
+
+
+		
+		
+		
+		
+
+	}
+

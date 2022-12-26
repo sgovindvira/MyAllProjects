@@ -1,0 +1,48 @@
+package com.employeeapi.testCases;
+
+import org.testng.annotations.BeforeClass;
+
+import com.employeeapi.base.TestBase;
+
+import io.restassured.RestAssured;
+import io.restassured.http.Method;
+
+public class TC001_GET_AllEmployees extends TestBase {
+	
+	@BeforeClass
+	
+	public void getAllemployees() throws InterruptedException {
+		logger.info("Starting TC001_GET_AllEmployee");
+		RestAssured.baseURI= baseURI;
+		
+		httpRequests = RestAssured.given();
+		
+		response = httpRequests.request(Method.GET,"/employees");
+		Thread.sleep(3000);
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}
